@@ -1,0 +1,17 @@
+These are all the dlls that are currently required to use my programs.
+Most of people already have them.. but always there are the ones that dont :P
+
+So..
+
+*How to Install*
+
+Copy all the dlls to the folder:
+
+C:/Windows/System32
+
+or to the same folder that the program is in
+
+
+If it asks you to replace the files, 
+first make a backup of the old one, 
+and then you replace.

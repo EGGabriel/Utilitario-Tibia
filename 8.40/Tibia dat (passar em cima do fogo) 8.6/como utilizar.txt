@@ -1,0 +1,5 @@
+Apos abrir a pasta com o pic desejado:
+
+1. Copie o Tibia.dat
+2. Cole na pasta do seu cliente do tibia (no caso o FoxWorld)
+3. Caso peça para substituir, clique em sim.

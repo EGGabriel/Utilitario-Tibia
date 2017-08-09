@@ -1,0 +1,417 @@
+Tibia MCV - Multi Cheater Version
+by Dark Pallys
+---------------------------------
+
+*Introduction*
+This is a list of the Waypoint Types, 
+and a little explanation of how to use each.
+
+*Index*
+[SECTION 1] ......... List of waypoints types and what will be covered in this text.
+[SECTION 2] ......... Waypoint Types / Explanations / Examples
+[SECTION 3] ......... Variables / Explanations / Examples
+
+============================================
+==================SECTION 1==================
+============================================
+
+*Waypoint Types*
+  -Normal
+  -Rope
+  -Ladder
+  -Shovel
+  -Upstair
+  -Downstair
+  -Say
+  -Delay
+  -DropItem
+  -IfEnoughItemsGoto
+  -IfFewItemsGoto
+  -GoToLine
+  -PauseAutoAttack
+  -ResumeAutoAttack
+  -SewerGrate
+  -UseGround
+  -IfTrue
+  -PauseAutoWalker
+  -SetMeleeKill
+  -SetLoot
+  -Label
+  -GoToLabel
+  -SetFollow
+  -SetAttack
+  -UseItemAt
+  -MagicRope
+  -SetRuneKill
+  -PauseRuneAttack
+  -ResumeRuneAttack  
+  -SetAttackAliens
+
+*Variables*
+  -#cITEMIDc#
+  -#level#
+  -#hp#
+  -#hpmax#
+  -#mp#
+  -#mpmax#
+  -#stamina#
+  -#soul#
+  -#cap#
+  -#exp#
+  -#fist#
+  -#fist%#
+  -#club#
+  -#club%#
+  -#sword#
+  -#sword%#
+  -#axe#
+  -#axe%#
+  -#distance#
+  -#distance%#
+  -#shielding#
+  -#shielding%#
+  -#fishing#
+  -#fishing%#
+
+=============================================
+==================SECTION 2==================
+=============================================
+
+*Normal Waypoint*
+  -Simple waypoint which tells the bot to go to a specified coordinate
+   e.g. Normal (32052,32220,7)
+   e.g2. Normal (X,Y,Z)
+   To add this waypoiny select "Normal" in the waypoint list and press one of the add waypoint buttons.
+
+*Rope Waypoint*
+  -Simple waypoint which tells the bot to use a rope on a specified coordinate
+   e.g. Rope (31062,32022,7)
+   e.g2. Rope (X,Y,Z)
+   To add this waypoiny select "Rope" in the waypoint list and press one of the add waypoint buttons.
+
+*Ladder Waypoint*
+  -Simple waypoint which tells the bot to use a ladder/go up a ladder on a specified coordinate
+   e.g. Ladder (32602,32335,7)
+   e.g2. Ladder (X,Y,Z)
+   To add this waypoiny select "Ladder" in the waypoint list and press one of the add waypoint buttons.
+
+*Shovel Waypoint*
+  -Simple waypoint which tells the bot to use a shovel/light shovel on a specified coordinate
+   e.g. Shovel (32150,31627,7)
+   e.g2. Shovel (X,Y,Z)
+   To add this waypoiny select "Shovel" in the waypoint list and press one of the add waypoint buttons.
+
+*Upstair Waypoint*
+  -Simple waypoint which tells the bot that when it goes to that specified coordinate, you will go to a floor above you.
+   e.g. Upstair (31239,32332,7)
+   e.g2. Upstair (X,Y,Z)
+   To add this waypoiny select "Upstair" in the waypoint list and press one of the add waypoint buttons. 
+   The item which is on the coordinate that you specified must take you to a floor above you!
+
+*Downstair Waypoint*
+  -Simple waypoint which tells the bot that when it goes to that specified coordinate, you will go to a floor below you.
+   e.g. Downstair (31340,31429,7)
+   e.g2. Downstair (X,Y,Z)
+   To add this waypoiny select "Downstair" in the waypoint list and press one of the add waypoint buttons. 
+   The item which is on the coordinate that you specified must take you to a floor below you!
+
+*Say Waypoint*
+  -Simple waypoint, when reached, the bot will say the text specified by you.
+   e.g. Say (hi) -- This will send the message "hi"
+   e.g2. Say (TEXT)
+   To add this waypoiny select "Say" in the waypoint list, then a input window will appear, type the message there and press ok.
+
+*Delay Waypoint*
+  -Simple waypoint, when reached, the bot will stop for X amount of seconds.
+   e.g. Delay (3) -- This will make the waypoint delay(stop) for 3 seconds.
+   e.g2. Delay (DELAYAMOUNT)
+   To add this waypoiny select "Delay" in the waypoint list, then a input window will appear, type the amount of seconds to delay and press ok.
+
+*DropItem Waypoint*
+  -Simple waypoint which tells the bot to drop all the items of a specified id.
+   e.g. DropItem (3031) -- This will drop all your gold, good to leave loots at your house.
+   e.g2. DropItem (ITEMID)
+   To add this waypoint select "DropItem" in the waypoint list, then a input window will appear, type the id of the item do drop and press ok.
+
+*IfEnoughItemsGoto Waypoint*
+  -This waypoint is a bit more advanced, it will go to a specified line of the list of waypoints if
+    the amount of items of a specified id is greater than or equal to a specified value.
+   NOTE: To use labels instead of lines, in the part where you put the line type   Label:LABELNAME
+   Tibia MCV also recognizes if you typed only numbers or letters, so you can also just type the name of the label that Tibia MCV will automaticly add "Label:" in front of it.
+   e.g. IfEnoughItemsGoto (3031,100,50) -- If the amount of gold(id 3031) is greater than or equal to 100 then it will go to the line 50.
+   e.g2. IfEnoughItemsGoto (ITEMID,AMOUNT,LINE/LABEL)
+   e.g3. IfEnoughItemsGoto (3031,100,Label:GoBank) -- If the amount of gold(id 3031) is greater than or equal to 100 then it will go to the line with label "GoBank".
+   To add this waypoint select "IfEnoughItemsGoto" in the waypoint list, then a input window will appear, 
+   first it will ask you the id of the item, then press ok, then it will ask you the amount required, then press ok, 
+   and for last it will ask the line or label it will go to, then press ok and it will be added to the list.
+
+*IfFewItemsGoto Waypoint*
+  -This waypoint is a bit more advanced, it will go to a specified line of the list of waypoints if
+    the amount of items of a specified id is less than or equal to a specified value.
+   NOTE: To use labels instead of lines, in the part where you put the line type   Label:LABELNAME
+   Tibia MCV also recognizes if you typed only numbers or letters, so you can also just type the name of the label that Tibia MCV will automaticly add "Label:" in front of it.
+   e.g. IfFewItemsGoto (3031,100,50) -- If the amount of gold(id 3031) is less than or equal to 100 then it will go to the line 50.
+   e.g2. IfFewItemsGoto (ITEMID,AMOUNT,LINE/LABEL)
+   e.g3. IfFewItemsGoto (3031,100,Label:GoHunt) -- If the amount of gold(id 3031) is less than or equal to 100 then it will go to the line with label "GoHunt".
+   To add this waypoint select "IfFewItemsGoto" in the waypoint list, then a input window will appear, 
+   first it will ask you the id of the item, then press ok, then it will ask you the amount required, then press ok, 
+   and for last it will ask the line or label it will go to, then press ok and it will be added to the list.
+
+*GoToLine Waypoint*
+  -Simple waypoint which tells the bot to go to the line X when reached.
+   e.g. GoToLine (10) -- This will make the bot go to the line 10 in the waypoint list.
+   e.g2. GoToLine (LINE)
+   To add this waypoint select "GoToLine" in the waypoint list, then a input window will appear, type the line that it has to go to and press ok.
+
+*PauseAutoAttack Waypoint*
+  -Simple waypoint which tells the bot to stop/pause the Auto Attack function.
+   e.g. PauseAutoAttack () -- This will make the bot stop/pause the Auto Attack function.
+   To add this waypoint select "PauseAutoAttack" in the waypoint list and press one of the add waypoint buttons. 
+
+*ResumeAutoAttack Waypoint*
+  -Simple waypoint which tells the bot to start/resume the Auto Attack function.
+   e.g. ResumeAutoAttack () -- This will make the bot start/resume the Auto Attack function.
+   To add this waypoint select "ResumeAutoAttack" in the waypoint list and press one of the add waypoint buttons. 
+
+*SewerGrate Waypoint*
+  -Simple waypoint which tells the bot to use a sewer grate on a specified coordinate
+   e.g. SewerGrate (32150,31627,7)
+   e.g2. SewerGrate (X,Y,Z)
+   To add this waypoiny select "SewerGrate" in the waypoint list and press one of the add waypoint buttons.
+
+*UseGround Waypoint*
+  -Simple waypoint which tells the bot to use a item on the ground on a specified coordinate
+   e.g. UseGround (2773,32040,31915,7) -> Uses lever
+   e.g2. UseGround (ITEMID,X,Y,Z)
+   To add this waypoiny select "UseGround" in the waypoint list and press one of the add waypoint buttons,
+   then enter the item id which is going to be used.
+
+*IfTrue Waypoint*
+  -This waypoint is a bit more advanced, it will compare two values according to a operator which you defined and if it       returns true it tell the bot to go to line X or to a line with a label X.
+   NOTE: To use labels instead of lines, in the part where you put the line type   Label:LABELNAME
+   Tibia MCV also recognizes if you typed only numbers or letters, so you can also just type the name of the label that Tibia MCV will automaticly add "Label:" in front of it.
+   e.g. IfTrue (Value1,Value2,Operator,Line/Label)
+   e.g2. IfTrue (#level#,8,<,0) -> If LEVEL is less than 8, it will go to line 0
+   e.g3. IfTrue (#stamina#,0,=,57) -> If STAMINA(in minutes) is equal to 0, it will go to line 57
+   e.g4. IfTrue (#level#,8,<,Label:GoMain) -> If LEVEL is less than 8, it will go to line with label "GoMain"
+   e.g5. IfTrue (#stamina#,0,=,Label:StartHunting) -> If STAMINA(in minutes) is equal to 0, it will go to line with label "StartHunting"
+   To add this waypoiny select "IfTrue" in the waypoint list and press one of the add waypoint buttons.
+   Follow the prompts, enter Value1, Value2, Operator and Line or Label Name.
+   
+   *Available Operators*
+     =      Equal to X
+     >=    Greater than or equal to X
+     >      Greater than X
+     <=    Less than or equal to X
+     <      Less than X
+     <>    Not Equal To X
+
+*PauseAutoWalker Waypoint*
+  -Simple waypoint which tells the bot to stop the Auto Walker function.
+   After this waypoint is used the Auto Walker can only be activated manually.
+   e.g. PauseAutoWalker () -- This will make the bot stop the Auto Walker function.
+   To add this waypoint select "PauseAutoWalker" in the waypoint list and press one of the add waypoint buttons. 
+
+*SetMeleeKill Waypoint*
+  -Simple waypoint which tells the bot to add a certain creature to the list of creatures to attack.
+   It will check if the creature is already in the list, and if it's not it will add it..
+   e.g. SetMeleeKill (Rotworm) -- This will make the bot add Rotworm to the list of creatures to attack.
+   To add this waypoint select "SetMeleeKill" in the waypoint list, press one of the add waypoint buttons and 
+   enter the name of the creature. 
+
+*SetLoot Waypoint*
+  -With this waypoint you can control the loot system of Tibia MCV, you will be able to change configurations, 
+   set new items to loot and etc.
+   There are many variations of this waypoint, they will be listed below.
+   <Adding Item to Custom Loot>
+     e.g. SetLoot (Gold,3031) -- Adds the id of Gold(GP) to the custom items list.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the name of the item, and then the id. 
+   <Loot Food>
+     e.g. SetLoot (Food) -- Activates food looting.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the "Food". 
+   <Loot GP>
+     e.g. SetLoot (GP) -- Activates gold looting.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the "GP". 
+   <Loot Worms>
+     e.g. SetLoot (Worms) -- Activates worms looting.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the "Worms". 
+   <Eat Food in Corpses>
+     e.g. SetLoot (EatFood) -- Activates function to eat food in corpses.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the "EatFood" or simply "Eat". 
+   <Loot Custom>
+     e.g. SetLoot (Custom) -- Activates funciton to loot items specified in the custom items list.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the "Custom". 
+   <Loot On/Off>
+     e.g. SetLoot (On) -- Enables looting.
+     e.g. SetLoot (Off) -- Disables looting.
+     To add this waypoint select "SetLoot" in the waypoint list, press one of the add waypoint buttons and 
+     enter the "On" or "Off". 
+
+*Label Waypoint*
+  -This waypoint adds a label to the waypoint list, this is to be used with functions like GoToLabel*(See below).
+   e.g. Label (StartOfWaypoints)
+   e.g2. Label (LABEL NAME)
+   To add this waypoiny select "Label" in the waypoint list, then a input window will appear, type the label there and press ok.
+
+*GoToLabel Waypoint*
+  -Simple waypoint which tells the bot to go to the line which has a specific label.
+   e.g. GoToLine (StartOfWaypoints) -- This will make the bot go to the line that has the label "StartOfWaypoints"
+   in the waypoint list.
+   e.g2. GoToLine (LabelName)
+   To add this waypoint select "GoToLabel" in the waypoint list, then a input window will appear, 
+   enter the label that it has to go to and press ok.
+
+*SetFollow Waypoint*
+  -Simple waypoint which tells the bot to use the enable or disable automatic follow creatures being attacked.
+   e.g. SetFollow (On)
+   e.g2. SetFollow (Off)
+   To add this waypoiny select "SetFollow" in the waypoint list and type "On" to follow and "Off" to not follow creatures automatically.
+
+*SetAttack Waypoint*
+  -Advanced waypoint which controls most of the attacking related functions.
+   With this function you can set the Attack Mode(Full/Balanced/Defense),
+   you can also tell the bot to attack only creatures that have attacked you,
+   you can also tell the bot the minimum HP that a creature needs to have so the bot can attack()
+   you can also tell the bot to enable the priority system(This functin only enables it, to disable it you must do it manually)
+   and also you can set the maximum range that the bot will look for creatures to attack
+   e.g. SetAttack (Full)
+   e.g2. SetAttack (Balanced)
+   e.g3. SetAttack (Defense)
+   e.g4. SetAttack (IfAttacked)
+   e.g5. SetAttack (MinHP: 80)
+   e.g6. SetAttack (UsePriority)
+   e.g7. SetAttack (Range: 6)
+   To add this waypoiny select "SetAttack" in the waypoint list and type one of the following items:
+  -Full
+  -Balanced
+  -Defense
+  -IfAttacked
+  -MinHP: #(Where # = Number)
+  -UsePriority
+  -Range: #(Where # = Number)
+
+*UseItemAt Waypoint*
+  -This waypoint allows you to use items at a certain coordinate. You must define the ID of the item you are using, and also the ID of the item on that specified coordinate.
+   It can be used to open doors for example.
+   e.g. UseItemAt (KeyID,DoorID,X,Y,Z)
+   e.g. UseItemAt (ItemIDBeingUsed,ItemIDBeingUsedAt,X,Y,Z)
+
+*MagicRope Waypoint*
+  -Simple waypoint which tells the bot to use the magic rope spell on a specified coordinate
+   e.g. MagicRope (31062,32022,7)
+   e.g2. MagicRope (X,Y,Z)
+   To add this waypoiny select "MagicRope" in the waypoint list and press one of the add waypoint buttons.
+
+*SetRuneKill Waypoint*
+  -Simple waypoint which tells the bot to add a certain creature to the list of creatures to attack with runes.
+   It will check if the creature is already in the list, and if it's not it will add it..
+   e.g. SetRuneKill (Rotworm,HMM) -- This will make the bot add Rotworm to the list of creatures to attack with HMMs.
+   To add this waypoint select "SetRuneKill" in the waypoint list, press one of the add waypoint buttons and 
+   enter the name of the creature, then enter one of the runes listed. 
+   **Available Runes**
+   -HMM
+   -LMM
+   -SD
+   -GFB
+   -EXPLOSION
+
+*PauseRuneAttack Waypoint*
+  -Simple waypoint which tells the bot to stop/pause the Rune Attack function.
+   e.g. PauseRuneAttack () -- This will make the bot stop/pause the Rune Attack function.
+   To add this waypoint select "PauseRuneAttack" in the waypoint list and press one of the add waypoint buttons. 
+
+*ResumeRuneAttack Waypoint*
+  -Simple waypoint which tells the bot to start/resume the Rune Attack function.
+   e.g. ResumeRuneAttack () -- This will make the bot start/resume the Rune Attack function.
+   To add this waypoint select "ResumeRuneAttack" in the waypoint list and press one of the add waypoint buttons. 
+
+*SetAttackAliens Waypoint*
+  -Simple waypoint which tells the bot to use the enable or disable to attack alien creatures.
+   e.g. SetAttackAliens (On)
+   e.g2. SetAttackAliens (Off)
+   To add this waypoiny select "SetAttackAliens" in the waypoint list and type "On" to follow and "Off" to  attack alien creatures or not.
+
+=============================================
+==================SECTION 3==================
+=============================================
+
+*#cITEMIDc#*
+  -This variable returns the amount of items of the specified id.
+   e.g. Say (I have #c3031c# gps!!) -- Supposing you have 100gp, the bot will say "I have 100 gps!!"
+   e.g2. Say (sell #c3577c# meat) -- Supposing you have 13 meats, the bot will say "sell 13 meat"
+
+*#level#*
+  -This variable returns your character's level.
+
+*#hp#*
+  -This variable returns the current hp(health points/life) of your character.
+
+*#hpmax#*
+  -This variable returns the maximum hp of your character.
+
+*#mp#*
+  -This variable returns the current mp(mana points/mana) of your character.
+
+*#mpmax#*
+  -This variable returns the maximum mp of your character.
+
+*#stamina#*
+  -This variable returns your character's stamina(in minutes) of your character.
+   Supposing you have full stamina(56:00), it will return 3360, which is in minutes. 56 hours = 3360 minutes
+
+*#soul#*
+  -This variable returns your character's soul points.
+
+*#cap#*
+  -This variable returns your character's capacity.
+
+*#exp#*
+  -This variable returns your experience points
+
+*#fist#*
+  -This variable returns your character's fist fighting level
+
+*#fist%#*
+  -This variable returns your character's fist fighting percentage left to advance level
+
+*#club#*
+  -This variable returns your character's club fighting level
+
+*#club%#*
+  -This variable returns your character's club fighting percentage left to advance level
+
+*#sword#*
+  -This variable returns your character's sword fighting level
+
+*#sword%#*
+  -This variable returns your character's sword fighting percentage left to advance level
+
+*#axe#*
+  -This variable returns your character's axe fighting level
+
+*#axe%#*
+  -This variable returns your character's axe fighting percentage left to advance level
+
+*#distance#*
+  -This variable returns your character's distance fighting level
+
+*#distance%#*
+  -This variable returns your character's distance fighting percentage left to advance level
+
+*#shielding#*
+  -This variable returns your character's shielding level
+
+*#shielding%#*
+  -This variable returns your character's shielding percentage left to advance level
+
+*#fishing#*
+  -This variable returns your character's fishing level
+
+*#fishing%#*
+  -This variable returns your character's fishing percentage left to advance level

@@ -1,0 +1,222 @@
+Tibia MCV - Multi Cheater Version
+by Dark Pallys
+---------------------------------
+
+*Introduction*
+Tibia MCV v2.6.6 for Tibia 8.40
+
+*Bugs Fixed*
+Minor bug fixes
+Waypoints Editing Fixed
+In the Auto Attacker, the function Attack Only If Attacked wasn't working properly and also the auto attacker would attack people with skulls around you even if they didn't attack you.
+Creature List at Exp. Checker is now fixed and it will recognize creatures properly
+AutoLooter has been modified and now should miss less corpses when looting
+
+*New Functions*
+
+Item Reloader **NEW**
+  -Reloads items such as Ice rapier, rings, amulets and ammo!
+  -For Ice Rapier, you can define a escape item in case you run out of Ice Rapiers!
+  -Ring Reloader includes (almost)ALL rings of the game
+  -Amulet Reloader includes (almost)ALL amulets and necklaces of the game
+  -Smart Ammo Reloader
+  --Automaticaly detect Weapon(Now supports every distance weapon)
+  --Min Ammo to reload
+  --Primary, Secondary and Tertiary Ammo
+
+Cave Bot
+  -Hotkeys to enable/disable CaveBot!
+  -Rune Attacker - NEW!!! (Attacks creatures with runes and melee)
+  -Waypoints "MOVER" enables you to move the waypoints up and down in case you add it on the wrong spot!
+  -Auto Walker(Runs smoother)
+  -Saving/Loading waypoints is much easier
+  -Loads NG Waypoints
+  -New Waypoint types
+  --Normal
+  --Rope
+  --Ladder
+  --Shovel
+  --Upstair
+  --Downstair
+  --Say
+  --Delay
+  --DropItem
+  --IfEnoughItemsGoto
+  --IfFewItemsGoto
+  --GoToLine
+  --PauseAutoAttack
+  --ResumeAutoAttack
+  --SewerGrate
+  --UseGround
+  --IfTrue
+  --PauseAutoWalker
+  --SetMeleeKill
+  --SetLoot
+  --Label
+  --GoToLabel
+  --SetFollow
+  --SetAttack
+  --UseItemAt
+  --MagicRope
+  --SetRuneKill
+  --PauseRuneAttack
+  --ResumeRuneAttack
+  --SetAttackAliens
+
+  -Variables System
+  --#cITEMIDc#        returns amount of items with id of ITEMID
+  --#level#
+  --#hp#
+  --#hpmax#
+  --#mp#
+  --#mpmax#
+  --#stamina#
+  --#soul#
+  --#cap#
+  --#exp#
+  --#fist#
+  --#fist%#
+  --#club#
+  --#club%#
+  --#sword#
+  --#sword%#
+  --#axe#
+  --#axe%#
+  --#distance#
+  --#distance%#
+  --#shielding#
+  --#shielding%#
+  --#fishing#
+  --#fishing%#
+  -Auto Looter
+
+*Functions*
+This program have some basic functions like:
+
+Multi Language(2 Languages, Portuguese and English)
+Full Light
+Experience Check(Now it shows in Tibia!)
+Fast Fishing
+Auto Fishing
+Orc Language Translator
+Tibia GPS
+Anti-Kick
+Auto Spell Caster
+Spear Pick-Up
+Chameleon
+Log of Attacks
+Auto Attacker - Auto attacks the configured monsters.
+Cancel Invisibility - Reveals the invisible monsters.
+Lure Check - Tells which monsters are 1 floor below/above you.
+MC Support(Choose which Tibia the program will act!)
+Aim Bot Combo Shot(Shot on a target(or more..) with a lot of Tibias at same time! Before this function already exist, but it couldn't be disabled)
+Food Eater(Eats a lot of types of food. Delay: 10 seconds.)
+Hide Window(Only few "functions" have this option.. the functions that need to open another window to enable and configure it)
+Safe Training(Stop/Start attacking partner if life is less/greater than X%)
+Save configurations for the main functions, such as Spear Pick Up, Rune Maker and etc.
+Mana Waster for rune maker(if run out of runes)
+Advanced Experience Check(Tells you how many creatures you need to kill to level up)
+Tray Icon Added
+  -Right Mouse Click: Shows a menu where you have few shortcuts to most of the functions.
+  -Left Mouse Click: Shows Tibia MCV window.
+Advanced Rune Maker
+  -Now you must define the minimum Soul required
+  -Also, you can choose which hand the rune is gonna be made at
+  -One of the most exciting functions I'd say, it Open backpacks and search for blank runes!
+  -Also it "frees" the ammo slot, in case there's anything there.. good if your using auto fishing and etc
+Advanced Spell Caster
+  -Delay for Timer of Spell caster decreased, so it's faster
+Status Healer
+  -Next to the Spell Caster, you can find the Status Healer
+  -Heals if Paralyzed with "exura"
+  -Heals if Poisoned with spell or rune
+Advanced Auto Healer
+  -Now auto healer has it's own window, and it's delay for the Timer decreased, so it's faster to heal
+Mana Shield Healer
+  -This function will restore your mana shield if it wears off
+  -You can define minimum mana for use(Ex: 100)
+Mana Shield Alert
+  -This function will play a sound in case your mana shield wears off,
+  It will stop playing the alarm if you uncheck the box or activate your mana shield again.
+Speed Regenerator
+  -This function will restore your speed if the spell wears off
+  -You can define either "Utani Hur" or "Utani Gran Hur"
+Auto Fish(Mouse less)
+  -Fish only at "fishy" squares
+  -Fish if cap >= X
+  -Drop Fish
+Rune Maker
+  -Eat Food Under(Found at the Rune Maker window)
+Auto Logout
+  -GM/CM Protection(Auto Logout / Alert)
+  -Skulls
+  -Worms, Food
+  -Etc
+Once-a-Day Advertisement
+  -Advertisements shown once a day to keep Tibia MCV free
+Item List
+  -Now it has a ID Reader, and a backpack reader very user friendly.
+Aim Bot
+  -Attacks runes automaticly in accord with the configurations.
+  -NOW AIMBOT HAS 100% ACCURACY AND SPEED HAS INCREASED GREATLY
+  -Now you can set the delay for shooting runes!
+  -New rune types added(Fluids)
+  -Added option to use Tibia Hotkeys or Old Method
+
+Auto Healer
+  -Added option to use Tibia Hotkeys or Old Method
+  -Heals the char with specified methods in accord with the configurations.
+  -HEALING SPEED IMPROVED
+  -Healing Methods:
+  --UH
+  --IH
+  --Spell
+  --Small Health Potion
+  --Strong Health Potion
+  --Great Health Potion
+  --Custom Rune
+
+Group Healer
+  -Automaticaly detect new party members **NEW**
+  -HEALING SPEED IMPROVED
+  -This function is gonna be used to heals a certain group of people that you defined
+  -You can heal the members with:
+  --Small Health Potion **NEW**
+  --Strong Health Potion **NEW**
+  --Great Health Potion **NEW**
+  --UH
+  --IH
+  --Exura Sio
+  --Exura Gran Mas Res
+  --Custom Rune **NEW**
+
+-HOTKEYS-
+Numpad + >> Level Spy Up
+Numpad - >> Level Spy Down
+Page Up - Fast Fishing
+Home - Auto Fishing
+Page Down - Full Light
+End - Exp. Check
+Delete - Aim Bot
+Ctrl+D - Disable Hotkeys
+
+*Coming Soon*
+-Support for Blackd and Tibia Auto Waypoints
+-Webserver
+ --Possibility to send message (Normal/Private)
+ --Walk(N,S,E,W)
+ --See Char Status such as HP, MP, etc
+ --Control Tibia MCV Functions(Enabled/Disable)
+ --Website design totally customizable
+-Auto Fish "Walker"
+ --Walk to next waypoiny if no fishy water
+ --Drop fish at house
+
+*Errors and/or Sugestions*
+If you have any sugestion or 
+you want to report a bug, 
+send an e-mail to:
+
+darkpallys@yahoo.com.br
+
+

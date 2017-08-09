@@ -1,0 +1,23 @@
+[Servers]
+Offline=127.0.0.1
+Online=127.0.0.1
+The War Server=189.107.192.84
+WAR Server=201.42.89.57
+Servfull=127.0.0.1
+OT Global=189.102.64.55
+Slayer Yurots=200.153.194.72
+Street Kings=187.5.41.23
+War Lost Game=189.104.40.48
+amour=201.68.81.102
+FoxWorld 2=200.98.201.132
+EvolutionWorld=187.105.65.222
+FighterWorld=127.0.0.1
+Killer Yoruts=177.35.11.164
+Phoenix=162.210.37.167
+Vancine Ot=187.107.182.12
+FoxWorld WAR=200.98.201.97
+SoftWorld=189.79.232.168
+Express=179.158.90.167
+Foxworld2=179.158.90.167
+Hellblazer=52.67.247.113
+FoxToper=216.107.144.74

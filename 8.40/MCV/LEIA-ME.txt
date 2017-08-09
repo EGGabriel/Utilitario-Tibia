@@ -1,0 +1,211 @@
+Tibia MCV - Multi Cheater Version
+by Dark Pallys
+---------------------------------
+
+*Introdução*
+Tibia MCV v2.6.6 para Tibia 8.40
+
+*Bugs Fixed*
+Erros menores
+Edição de Waypoints arrumado
+No Auto Attacker, a funcao "Atacar somente se for atacado" nao estava funcionando devidamente e tambem o auto attacker atacava pessoas com skulls mesmo que eles nao tenham te atacado.
+Lista de monstros no Exp. Checker foi arrumado e agora o programa reconhece os monstros devidamente
+O AutoLooter foi modificado e agora deve perder menos corpos
+
+*Novas Funções*
+
+Item Reloader **NOVO**
+  -Carrega itens tipo Ice rapier, aneis, amuletos e munição!
+  -Para as Ice Rapiers, voce pode definir um item de escape, caso voce nao tenha mais Ice Rapiers para recarregar
+  -O Ring Reloader inclui (quase)TODOS os aneis do jogo
+  -O Amulet Reloader inclui (quase)TODOS os amuletos e colares do jogo
+  -Smart Ammo Reloader
+  --Detecta a arma que voce usa automaticamente(Agora suporta todas as armas de distancia)
+  --Minimo de munição para recarregar
+  --Primeiro, Segundo e Terceiro tipo de munição
+
+Cave Bot
+  -Hotkeys para ativar/desativar o cave bot
+  -Rune Attacker - **NOVO** (Ataca criatura com runas e ataque normal)
+  -Movimentador de Waypoints decha voce mover os waypoints para cima e para baixo em caso que voce adicione um waypoint no lugar errado!
+  -Auto Walker
+  -Salvar/Carregar waypoints e muito mais facil agora
+  -Loads NG Waypoints
+  -Novos tipos de Waypoint
+  --Normal
+  --Rope
+  --Ladder
+  --Shovel
+  --Upstair
+  --Downstair
+  --Say
+  --Delay
+  --DropItem
+  --IfEnoughItemsGoto
+  --IfFewItemsGoto
+  --GoToLine
+  --PauseAutoAttack
+  --ResumeAutoAttack
+  --SewerGrate
+  --UseGround
+  --IfTrue
+  --PauseAutoWalker
+  --SetMeleeKill
+  --SetLoot
+  --Label
+  --GoToLabel
+  --SetFollow
+  --SetAttack
+  --UseItemAt
+  --MagicRope
+  --SetRuneKill
+  --PauseRuneAttack
+  --ResumeRuneAttack
+  -Variables System
+  --#cITEMIDc#        retorna a quantidade de items do id "ITEMID"
+  --#level#
+  --#hp#
+  --#hpmax#
+  --#mp#
+  --#mpmax#
+  --#stamina#
+  --#soul#
+  --#cap#
+  --#exp#
+  --#fist#
+  --#fist%#
+  --#club#
+  --#club%#
+  --#sword#
+  --#sword%#
+  --#axe#
+  --#axe%#
+  --#distance#
+  --#distance%#
+  --#shielding#
+  --#shielding%#
+  --#fishing#
+  --#fishing%#
+  -Auto Looter
+
+*Funções*
+Este programa tem algumas funções basicas como:
+
+Multi Idioma(2 Idiomas, Portugues e Ingles)
+Full Light(Ilumina o Tibia)
+Experience Check(Diz quanto de experiencia voce precisa para passar de level no Tibia)
+Fast Fishing(Nunca mais canse de pescar por causa do "Vai e Vem" do mouse na vara e na agua)
+Auto Fishing(Clicka sozinho e trava a mira do mouse de pescar.)
+Orc Language Translator(Traduz o que o Blind Orc fala.. um minidicionario.. Ingles-Orc Language, Orc language-Ingles)
+Tibia GPS(Mostra suas coordenadas no Tibia, Horizontal, Vertical e Andar)
+Anti-Kick(Danca a cada um certo tempo determinado pelo usuario)
+Auto Spell Caster(Solta uma magia de acordo com as configurações)
+Spear Pick-Up(Pega spears automaticamente)
+Log de Ataques(Faz um registro dos ataques recebidos.)
+Auto Attacker(Ataca sozinho os monstros configurados.)
+Aim Bot(Ataca runas automaticamente de acordo com as configurações.)
+Desabilitar Invisibilidade(Revela os monstros invisiveis.)
+Chameleon(Muda a roupa dos personagens.)
+Auto Logout
+Lure Check(Diz os monstros que estao 1 andar abaixo/acima de voce.)
+MC Support(Escolha qual Tibia o programa vai atuar!)
+Aim Bot Combo Shot(Atire em um alvo com varios Tibias ao mesmo tempo! Antes essa função ja existia, porem não dava para desativar)
+Comer Comida(Come varios tipos de comida a cada 10 segundos.)
+Esconder Janela(Somente algumas funções tem esta opção.. as funções que precisa abrir outra janela)
+Treinamento Seguro(Para/Comeca a atacar se a vida do parceiro for menor/maior que X%)
+Salvar configurações para as funções principais.
+Gastador de Mana(Mana Waster) para o runemaker(caso acabem as blank runes)
+Exp. Check Avançado(Diz quantos monstros voce precisa matar para passar de nivel)
+Icone do Tibia MCV adicionado a banjeda(Tray Icon)
+  -Click com botao direito: Mostra um menu onde voce tera alguns atalhos para a maioria das funções.
+  -Click com botao esquerdo: Mostra o Tibia MCV.
+Rune Maker Avançado
+  -Agora voce tem que definier um minimo de souls
+  -Voce pode definir qual mao a runa sera usada
+  -One of the most exciting functions I'd say, it Open backpacks and search for blank runes!
+  -"Limpar" o arrow slot, caso tenha algum item no arrow slot, o programa movera o item para a primeira backpack
+  -Comer comida embaixo de voce(Na janela do Rune Maker)
+Spell Caster Avançado
+  -Delay do Spell Caster diminui, agora ele esta mais rapido
+Status Healer
+  -Curar paralizia com "exura"
+  -Curar envenenamento com spell(exana pox) ou runa
+Mana Shield Healer
+  -Esta funcao ira recuperar seu mana shield caso ele acabe
+  -Voce pode definir a mana minima(Ex: 100)
+Mana Shield Alert
+  -Essa funcao ira tocar um um som caso seu mana shield  acabe
+  Ela para de tocar o som caso voce desative a funcao, ou use mana shield novamente
+Speed Regenerator
+  -Essa funcao ira recuperar sua velociade caso a magia acabe.
+  -Voce pode definier para usar "Utani Hur" ou "Utani Gran Hur"
+Arquivos Faltando
+  -Alerta caso algum arquivo esteja faltando e mostra como arrumar o problema
+Auto Fish(Sem Mouse)
+  -Pesca somente em agua com peixe.
+  -Pesca se capacidade >= X
+  -Soltar Peixe embaixo de voce
+Aim Bot
+  -Ataca runas automaticamente de acordo com as configurações.
+  -AGORA O AIMBOT TEM 100% DE PRECISAO E A VELOCIDADE FOI AUMENTADA
+  -Agora voce pode definir a quantidade de segundos que o bot vai demorar para soltar as runas
+  -Novos tipos de runas adicionados a lista(poções)
+  -Agora voce podera escolher se vai usar Hotkeys do Tibia ou o metodo velho
+
+Auto Healer
+  -Agora voce podera escolher se vai usar Hotkeys do Tibia ou o metodo velho
+  -Recupera o char automaticamente de acordo com as configurações.
+  -VELOCIDADE DE CURA FOI MELHORADA!
+  -Metodos de cura:
+  --UH
+  --IH
+  --Spell
+  --Small Health Potion
+  --Strong Health Potion
+  --Great Health Potion
+  --Custom Rune(Runa/item personalizado)
+
+Group Healer
+  -Detectar novos membros da party automaticamente **NOVO**
+  -VELOCIDADE DE CURA FOI MELHORADA!
+  -Essa funcao vai recuperar a vida de um grupo de chars definido por voce
+  -Voce pode curar os membros do grupo com:
+  --Small Health Potion **NOVO**
+  --Strong Health Potion **NOVO**
+  --Great Health Potion **NOVO**
+  --UH
+  --IH
+  --Exura Sio
+  --Exura Gran Mas Res
+  --Custom Rune(Runa/item personalizado) **NOVO**
+
+-HOTKEYS-
+Numpad + >> Level Spy para cima
+Numpad - >>Level Spy para baixo 
+Page Up - Fast Fishing
+Home - Auto Fishing
+Page Down - Full Light
+End - Exp. Check
+Delete - Aim Bot
+Ctrl+D - Desativar Hotkeys
+
+*Em Breve*
+-Suporte para Blackd e Tibia Auto Waypoints
+-Webserver
+ --Mandar mensagem (Normal/Private)
+ --Andar(N,S,E,W)
+ --Ver Char Status como HP, MP, etc
+ --Controlar funcoes do Tibia MCV (Ativar/Desativar)
+ --Website design pode ser modificado por usuario
+-Auto Fish "Walker"
+ --Andar para o proximo waypoint se nao tiver nenhum peixe na agua
+ --Colocar peixes na casa
+
+*Erros e/o Sugestões*
+Caso tenha alguma sugestão ou 
+queira reportar algum erro, 
+mande um e-mail para:
+
+darkpallys@yahoo.com.br
+
+

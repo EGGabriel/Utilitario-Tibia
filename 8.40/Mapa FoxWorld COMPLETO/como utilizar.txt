@@ -1,0 +1,6 @@
+Primeiramente abra o executar:
+
+1. Escreva " %appdata% " sem as aspas no executar.
+2. Extraia a pasta Tibia para o desktop
+3. Apos extrair a pasta para o desktop, arraste-o para a pasta Roaming que você escreveu o %appdata%.
+Caso peça para substituir, clique em sim.
