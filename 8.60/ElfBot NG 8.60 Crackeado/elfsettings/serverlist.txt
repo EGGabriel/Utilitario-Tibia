@@ -1,0 +1,2 @@
+[Servers]
+FoxBr Open Tibia=200.98.201.82
